@@ -5,28 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
     <title>Login</title>
 </head>
 <body>
     <div class="container"> 
         <section>
-            <div class="row justify-content-md-center">
-                <div class="col-md-6 col-sm-12">
+            <div class="row registro justify-content-md-center align-items-center">
+                <div class="col-md-6 col-sm-12 shadow p-3 mb-5 bg-body rounded p-5">
                     <form class="form">
                         <legend>
                             Acces al panel
                         </legend>
-                                <label>
-                                    correo
-                                </label>
-                                <input type="email">
-                                <label>
-                                    password
-                                </label>
-                                <input type="password">
-                                <button type="submit">
-                            Acceder
-                        </button>
+                            <label>
+                                correo
+                            </label>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>                                <label>
+                                password
+                            </label>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>                                
+                            <button type="submit" class="btn btn-primary mt-5">
+                                Acceder     
+                            </button>
                     </form>
                 </div>
             </div>
